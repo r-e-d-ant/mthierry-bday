@@ -11,10 +11,17 @@ const giveYear = () => {
     if(yearPlus != 2022) {
         yearPlus += 1
         sec += 1
+        console.log(sec)
         bdayYear.textContent = yearPlus
     }else {
         bdayYear.textContent = 2022
     }
 }
 
-setInterval(giveYear, 1000);
+setInterval(giveYear, 2000);
+
+const celeb = document.querySelector('.celeb')
+
+setTimeout(() => {
+    celeb.removeAttribute("loop", "")
+}, 21000)

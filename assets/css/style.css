@@ -1,7 +1,7 @@
 
 /* ---- Font Family: Faster One from google */
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 *,
 *::before,
 *::after {
@@ -46,7 +46,7 @@ body {
     animation-name: bgchange;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 20s;
+    animation-delay: 21s;
     animation-timing-function: ease-in;
 }
 @keyframes bgchange {
@@ -57,8 +57,11 @@ body {
     color: var(--orange-clr);
     font-size: 17rem;
     position: absolute;
-    top: 0;
-    right: -20rem;
+    top: 30rem;
+    right: -1rem;
+    /* top: 0; */
+    /* right: -20rem; */
+    transform: rotate(360deg);
     animation-name: sungoup;
     animation-fill-mode: forwards;
     animation-duration: 2s;
@@ -66,15 +69,18 @@ body {
     animation-timing-function: ease-in;
 }
 @keyframes sungoup {
-    from { right: -20rem; }
-    to { right: 10rem; }
+    from { right: -1rem; top: 30rem; }
+    to { right: 10rem; top: 0; }
 }
 
 .bxs-rocket {
+    z-index: -1;
     color: var(--orange-clr);
-    font-size: 2rem;
+    font-size: 3rem;
     position: absolute;
     bottom: 0;
+    /* top: 50%;
+    left: 50%; */
     transform: translate(-50%, -50%) rotate(-45deg);
     animation-name: goup;
     animation-fill-mode: forwards;
@@ -83,15 +89,15 @@ body {
 }
 .rocket-one {
     left: 30%;
-    animation-delay: 22s;
+    animation-delay: 23s;
 }
 .rocket-two {
     left: 50%;
-    animation-delay: 24s;
+    animation-delay: 25s;
 }
 .rocket-three {
     left: 70%;
-    animation-delay: 26s;
+    animation-delay: 27s;
 }
 @keyframes goup {
     from { bottom: 0; }
@@ -101,6 +107,64 @@ body {
 .dates-container {
     display: flex;
     margin-top: 5rem;
+    position: relative;
+    font-family: 'Reenie Beanie', cursive;
+}
+.celeb {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 20%;
+    right: -38%;
+    transform: translate(-50%, -50%) scale(0);
+    animation-name: turi;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 20s;
+}
+@keyframes turi {
+    from { transform: translate(-50%, -50%) scale(0); }
+    to { transform: translate(-50%, -50%) scale(1); }
+}
+.f-day {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+.day-one {
+    top: 20%;
+    left: 7rem;
+    transform: translate(-50%, -50%);
+}
+.day-two {
+    top: 20%;
+    left: 18rem;
+    transform: translate(-50%, -50%);    
+}
+.tuturi {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+.tuturi-2 {
+    left: auto;
+    right: 0;
+}
+.smile {
+   font-size: 2.5rem;
+   letter-spacing: 2rem;
+   transform: scale(0);
+   transform-origin: top;
+   animation-name: smiled;
+   animation-fill-mode: forwards;
+   animation-duration: 2s;
+   animation-delay: 28s;
+}
+@keyframes smiled {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 .date-no {
     display: flex;
@@ -110,13 +174,13 @@ body {
     width: 140px;
     height: 110px;
 
+    padding-left: 1rem;
     margin-right: 2.5rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
     letter-spacing: 1rem;
 }
 .year {
     width: 230px;
-    padding-left: 1rem;
 }
 .date-no:last-child {
     margin-right: 0;
@@ -133,21 +197,51 @@ body {
 }
 .bday-desc-letters-container {
     display: flex;
+    font-family: 'Reenie Beanie', cursive;
+    margin-bottom: 2rem;
+    margin-top: .5rem;
 }
 .bday-name-letter {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-right: 1.5rem;
-    margin-bottom: 2rem;
 }
+.divid {
+    width: 1px;
+    height: 1px;
+    margin: 0 1rem;
+}
+/* .bday-name-letter:first-child {
+    margin-right: 3rem;
+} */
 .bday-name-letter:last-child {
     margin-right: 0;
 }
 .bday-desc-letter {
-    font-size: 2.8rem;
-    margin-right: 1.5rem;
+    font-size: 3rem;
+    margin-right: 1.8rem;
 }
 .bday-desc-letter:last-child {
     margin-right: 0;
+}
+
+.lottie-firework {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform 1s;
+    animation-name: lottie-firework-up;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 28s;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes lottie-firework-up {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 
 /* ---------- */
@@ -159,8 +253,3 @@ body {
     animation-fill-mode: forwards;
     animation-duration: 2s;
 }
-
-/* @keyframes mogoup {
-    from { bottom: -10rem }
-    to { bottom: -3rem }
-} */
