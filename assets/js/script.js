@@ -15,10 +15,12 @@ const giveYear = () => {
     }
 }
 
-setInterval(giveYear, 200);
+setTimeout(() => {
+    setInterval(giveYear, 100);
+}, 4000)
 
 const celeb = document.querySelector('.celeb')
 
 setTimeout(() => {
     celeb.removeAttribute("loop", "")
-}, 4100)
+}, 4120)

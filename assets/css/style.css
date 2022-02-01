@@ -57,19 +57,17 @@ body {
     color: var(--orange-clr);
     font-size: 17rem;
     position: absolute;
-    top: 30rem;
+    top: 35rem;
     right: -1rem;
-    /* top: 0; */
-    /* right: -20rem; */
     transform: rotate(360deg);
     animation-name: sungoup;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 4000ms;
+    animation-delay: 4120ms;
     animation-timing-function: ease-in;
 }
 @keyframes sungoup {
-    from { right: -1rem; top: 30rem; }
+    from { right: -1rem; top: 35rem; }
     to { right: 10rem; top: 0; }
 }
 
@@ -79,8 +77,6 @@ body {
     font-size: 3rem;
     position: absolute;
     bottom: 0;
-    /* top: 50%;
-    left: 50%; */
     transform: translate(-50%, -50%) rotate(-45deg);
     animation-name: goup;
     animation-fill-mode: forwards;
@@ -111,6 +107,7 @@ body {
     font-family: 'Reenie Beanie', cursive;
 }
 .celeb {
+    z-index: -1;
     width: 300px;
     height: 300px;
     position: absolute;
@@ -120,13 +117,14 @@ body {
     animation-name: turi;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 4100ms;
+    animation-delay: 4120ms;
 }
 @keyframes turi {
     from { transform: translate(-50%, -50%) scale(0); }
     to { transform: translate(-50%, -50%) scale(1); }
 }
 .f-day {
+    z-index: -1;
     width: 300px;
     height: 300px;
     position: absolute;
@@ -181,10 +179,10 @@ body {
 }
 .ro {
     animation-name: flipc;
-   animation-fill-mode: forwards;
-   animation-duration: 1s;
-   animation-delay: 16000ms;
-   transform: rotateY(0);
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 16000ms;
+    transform: rotateY(0);
 }
 @keyframes flipc {
     from { transform: rotateY(0); }
@@ -245,7 +243,6 @@ body {
     animation-delay: 10000ms;
     animation-timing-function: ease-in;
 }
-
 
 @keyframes lottie-firework-up {
     from { transform: scale(0); }
