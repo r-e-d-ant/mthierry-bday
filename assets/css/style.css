@@ -13,6 +13,7 @@
 /* ============ -- VARIABLE -- =========== */
 :root {
     --bg-clr: #593861;
+    --bg-clr-alt: #3B2640;
     --txt-clr: #FEF7FF;
     --orange-clr: #FFB58C;
 }
@@ -35,45 +36,67 @@
 
 body {
     font-family: "Faster One", sans-serif;
-    background-color: var(--bg-clr);
+    background-color: var(--bg-clr-alt);
     color: var(--txt-clr);
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    animation-name: bgchange;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 20s;
+    animation-timing-function: ease-in;
+}
+@keyframes bgchange {
+    from { background-color: var(--bg-clr-alt); }
+    to { background-color: var(--bg-clr); }
 }
 .bxs-sun {
     color: var(--orange-clr);
     font-size: 17rem;
     position: absolute;
     top: 0;
-    right: 13rem;
+    right: -20rem;
     animation-name: sungoup;
     animation-fill-mode: forwards;
     animation-duration: 2s;
+    animation-delay: 20s;
+    animation-timing-function: ease-in;
 }
-/* @keyframes sungoup {
-    from { right: -20rem }
-    to { right: 13rem }
-} */
+@keyframes sungoup {
+    from { right: -20rem; }
+    to { right: 10rem; }
+}
 
 .bxs-rocket {
     color: var(--orange-clr);
     font-size: 2rem;
     position: absolute;
-    bottom: 55%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    transform: translate(-50%, -50%) rotate(-45deg);
     animation-name: goup;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-timing-function: cubic-bezier(.7,.94,.52,.01);
 }
-/* @keyframes goup {
-    from { bottom: 0; left: 0; }
-    to { bottom: 55%; left: 55% }
-} */
+.rocket-one {
+    left: 30%;
+    animation-delay: 22s;
+}
+.rocket-two {
+    left: 50%;
+    animation-delay: 24s;
+}
+.rocket-three {
+    left: 70%;
+    animation-delay: 26s;
+}
+@keyframes goup {
+    from { bottom: 0; }
+    to { bottom: 100%; }
+}
 
 .dates-container {
     display: flex;
