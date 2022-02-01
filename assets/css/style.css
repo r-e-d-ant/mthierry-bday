@@ -1,0 +1,142 @@
+
+/* ---- Font Family: Faster One from google */
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ============ -- VARIABLE -- =========== */
+:root {
+    --bg-clr: #593861;
+    --txt-clr: #FEF7FF;
+    --orange-clr: #FFB58C;
+}
+/* ------------------------------------ */
+
+
+/* ============ -- BASE -- =========== */
+.container {
+    margin: 2rem;
+}
+.card {
+    background: linear-gradient(108.72deg, #fef7ff1f 0%, #fbf9fb05 100%);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: thin solid #fef7ff36;
+}
+
+/* ----------------------------------- */
+
+body {
+    font-family: "Faster One", sans-serif;
+    background-color: var(--bg-clr);
+    color: var(--txt-clr);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bxs-sun {
+    color: var(--orange-clr);
+    font-size: 17rem;
+    position: absolute;
+    top: 0;
+    right: 13rem;
+    animation-name: sungoup;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+/* @keyframes sungoup {
+    from { right: -20rem }
+    to { right: 13rem }
+} */
+.bxs-rocket {
+    color: var(--orange-clr);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation-name: goup;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+/* @keyframes goup {
+    from { bottom: 0; left: 0; }
+    to { bottom: 55%; left: 55% }
+} */
+
+.dates-container {
+    display: flex;
+    margin-top: 5rem;
+}
+.date-no {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 110px;
+
+    margin-right: 2.5rem;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+}
+.year {
+    width: 230px;
+    padding-left: 1rem;
+}
+.date-no:last-child {
+    margin-right: 0;
+}
+
+/* ---------------- */
+.day-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 700px;
+    height: 300px;
+}
+.bday-desc-letters-container {
+    display: flex;
+}
+.bday-name-letter {
+    font-size: 1.8rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+.bday-name-letter:last-child {
+    margin-right: 0;
+}
+.bday-desc-letter {
+    font-size: 2.8rem;
+    margin-right: 1.5rem;
+}
+.bday-desc-letter:last-child {
+    margin-right: 0;
+}
+
+/* ---------- */
+.mountain-wave {
+    z-index: -1;
+    position: absolute;
+    bottom: -3rem;
+    animation-name: mogoup;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+/* @keyframes mogoup {
+    from { bottom: -10rem }
+    to { bottom: -3rem }
+} */
