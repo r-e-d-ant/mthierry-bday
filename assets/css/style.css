@@ -46,7 +46,7 @@ body {
     animation-name: bgchange;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 21s;
+    animation-delay: 4200ms;
     animation-timing-function: ease-in;
 }
 @keyframes bgchange {
@@ -65,7 +65,7 @@ body {
     animation-name: sungoup;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 20s;
+    animation-delay: 4000ms;
     animation-timing-function: ease-in;
 }
 @keyframes sungoup {
@@ -84,20 +84,20 @@ body {
     transform: translate(-50%, -50%) rotate(-45deg);
     animation-name: goup;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(.7,.94,.52,.01);
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
 }
 .rocket-one {
     left: 30%;
-    animation-delay: 23s;
+    animation-delay: 6000ms;
 }
 .rocket-two {
     left: 50%;
-    animation-delay: 25s;
+    animation-delay: 7000ms;
 }
 .rocket-three {
     left: 70%;
-    animation-delay: 27s;
+    animation-delay: 8000ms;
 }
 @keyframes goup {
     from { bottom: 0; }
@@ -120,7 +120,7 @@ body {
     animation-name: turi;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 20s;
+    animation-delay: 4100ms;
 }
 @keyframes turi {
     from { transform: translate(-50%, -50%) scale(0); }
@@ -160,7 +160,7 @@ body {
    animation-name: smiled;
    animation-fill-mode: forwards;
    animation-duration: 2s;
-   animation-delay: 28s;
+   animation-delay: 14000ms;
 }
 @keyframes smiled {
     from { transform: scale(0); }
@@ -178,6 +178,17 @@ body {
     margin-right: 2.5rem;
     font-size: 4rem;
     letter-spacing: 1rem;
+}
+.ro {
+    animation-name: flipc;
+   animation-fill-mode: forwards;
+   animation-duration: 1s;
+   animation-delay: 16000ms;
+   transform: rotateY(0);
+}
+@keyframes flipc {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(360deg); }
 }
 .year {
     width: 230px;
@@ -210,9 +221,6 @@ body {
     height: 1px;
     margin: 0 1rem;
 }
-/* .bday-name-letter:first-child {
-    margin-right: 3rem;
-} */
 .bday-name-letter:last-child {
     margin-right: 0;
 }
@@ -234,7 +242,7 @@ body {
     animation-name: lottie-firework-up;
     animation-fill-mode: forwards;
     animation-duration: 1s;
-    animation-delay: 28s;
+    animation-delay: 10000ms;
     animation-timing-function: ease-in;
 }
 
@@ -249,7 +257,4 @@ body {
     z-index: -1;
     position: absolute;
     bottom: -3rem;
-    animation-name: mogoup;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
 }
