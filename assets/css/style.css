@@ -53,10 +53,11 @@ body {
     animation-fill-mode: forwards;
     animation-duration: 2s;
 }
-/* @keyframes sungoup {
+@keyframes sungoup {
     from { right: -20rem }
     to { right: 13rem }
-} */
+}
+
 .bxs-rocket {
     color: var(--orange-clr);
     font-size: 2rem;
@@ -69,10 +70,10 @@ body {
     animation-duration: 2s;
     animation-delay: 2s;
 }
-/* @keyframes goup {
+@keyframes goup {
     from { bottom: 0; left: 0; }
     to { bottom: 55%; left: 55% }
-} */
+}
 
 .dates-container {
     display: flex;
@@ -136,7 +137,7 @@ body {
     animation-duration: 2s;
 }
 
-/* @keyframes mogoup {
+@keyframes mogoup {
     from { bottom: -10rem }
     to { bottom: -3rem }
-} */
+}
