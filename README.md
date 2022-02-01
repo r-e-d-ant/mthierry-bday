@@ -1,2 +1,4 @@
 # mthierry-bday
-My Birthday countdown
+My Birthday countdownC
+
+Take a look at it live here: https://mthierry-day.netlify.app
